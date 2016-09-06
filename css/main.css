@@ -1,0 +1,225 @@
+*{
+	/* border: 1px solid grey; */
+}
+	body{
+	font-family: "微软雅黑";
+}
+nav{
+	background: #ccc;
+	height: 50px; 
+}
+#banner{
+	background: pink;
+	padding-bottom: 1px;/* 防止父元素跟上'更多' */
+	padding-top: 50px;
+	/* height: 700px; */
+color: grey;
+}
+nav ul{
+	list-style: none;
+	margin: 0px;
+	float: right;
+}
+#banner h1{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+nav ul li{
+	display: inline-block;/* 以块级元素显示在行内 */
+	/* display: block;
+	float: left; */
+	line-height: 50px;
+	margin-right: 15px;
+	/* border: 1px solid red; */
+}
+nav a{
+	text-decoration: none;
+	line-height: inherit;/* 这个不用设置吧O.O */
+
+	display: inline-block;
+	/* width: 100px; *//* 可以设置宽度 */
+	height: inherit;/* 为了让超链接可点击的区域大一点,高度从母元素继承过来*/
+	color: white;
+}
+nav .logo{
+	float: left;
+	line-height: 50px;
+	margin-left: 20px;
+}
+
+
+#banner .inner h1{
+	margin: 0px;
+}
+#banner .inner{
+	margin: 0 auto;
+	max-width: 300px;
+	text-align:center; 
+	/* border: 1px solid red; */
+}
+/* #banner .inner input.btn1{
+background: url(../img/1.jpg) no-repeat;
+height: 100px;
+width: 100px;
+	background-image: url(../img/1.jpg);
+} */
+ #banner .inner button.bannerBtn{
+ 	border: none;
+ 	background-color: white;
+ 	width: 100px;
+ 	/* 按钮样式 */
+ 	font: 15px "微软雅黑";
+ 	color: grey;
+ 	padding: 5px;
+ }
+ #banner .inner div.more{
+ 	font: 12px;
+ 	margin:100px 0px 30px ;	
+
+ }
+ #banner .inner p.sub-title{
+ 	line-height: 30px;
+ }
+ /* 内容部分 */
+ .one{
+ 	background-color: #4bcbd6;
+ 	color: #fff;
+ 	text-align: center;
+ 	padding: 100px 0;
+ }
+ .wrapper{
+ 	margin:0px auto;
+ 	max-width: 960px;
+ }
+.wrapper .hr{
+	height: 2px;
+	width: 60%;
+	margin:20px auto;
+	background: #c2ced0; 
+}
+.sub_header{
+	font-size: 17px;
+	line-height: 2.5em;
+}
+.icon_group .icon{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	transform: rotate(45deg); 
+	background: #4ba8b7;
+	margin:40px;
+}
+/* 8.12*/
+.two{
+	background: #132425;
+	/*overflow:hidden;*/
+}
+.firstArticle >div{
+	float: left;
+	font-size: 0;/*不同的div如果字体不一样有可能导致中间有缝隙*/
+}
+.firstArticle:nth-child(odd){
+	background-color: rgba(255,255,255,0.02);
+}
+.imgZone{
+	width:45%;
+	/*border:1px solid blue; */
+}
+.imgZone img{
+	width: 100%;
+}
+.textZone{
+	/*border:1px solid blue;*/
+	width: 54%;
+	color: white;
+	
+}
+
+
+.clearfix:after{
+	content: "";/*在指定元素后添加内容*/
+	display: block;
+	/*height: 0px;*/
+	 /*visibility: hidden; 内容为空所以不用设置可见性*/
+	clear: both;
+}
+
+.textZone{
+	position: relative;
+	top:60px;
+	left: 40px; 
+}
+h2{
+	font-size: 30px;
+}
+.textZone p{
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	line-height: 24px;
+}
+.textZone >*{
+	max-width: 90%;
+}
+
+/* ------------------------------------------ */
+.purple-section{
+	background-color: #5d465d;
+	color: white;
+	padding: 80px 80px 0px 80px;
+}
+.heading-wrapper{
+	text-align: center;
+}
+.heading-wrapper .hr{
+	background: rgba(255,255,255,0.09);
+}
+.cardGroup{
+	padding:90px 90px; 
+}
+.card{
+	float: left;
+	padding: 30px;
+	width: 50%;/* 父元素的50% */
+	height: 300px;
+	background-color: rgba(255,255,255,0.03);
+	/*line-height: 300px;*/
+	-webkit-box-sizing:border-box; /*在已定义宽度中设置内边框和边距*/
+    -moz-box-sizing:border-box; /*content-box是在已设置的宽度之外设置内边框和边距*/
+    box-sizing:border-box;
+}
+.card p{
+	line-height: 26px;
+}
+
+.card:first-child{
+	background: rgba(0,0,0,0.05);
+}
+.card:nth-child(2){
+	background: rgba(0,0,0,0.11);
+}
+.card:nth-child(3){
+	background: rgba(0,0,0,0.11);
+}
+.card:nth-child(4){
+	background: rgba(0,0,0,0.05);
+}
+.card:nth-child(5){
+	background: rgba(0,0,0,0.05);
+}
+.card:nth-child(6){
+	background: rgba(0,0,0,0.11);
+}
+
+footer{
+	background-color: #968d82;
+	height: 200px;
+	text-align: center;
+}
+
+footer span{
+	display: inline-block;	
+	margin: 50px 30px;	
+	color: white; 
+}
